@@ -41,17 +41,14 @@ function addGamesToPage(games) {
         // about each game
         // TIP: if your images are not displaying, make sure there is space
         // between the end of the src attribute and the end of the tag ("/>")
-
-        //STRUGGLINGGG
-       newGameCard.innerHTML = `<img src=${games[i].img} alt=${games[i].name} width=50%/> <p>${games[i].name}<p/> <br/> <p>${games[i].description}</p>`
+       newGameCard.innerHTML = `<img src=${games[i].img} alt=${games[i].name} width=75%/> 
+       <p>${games[i].name}<p/> <br/> <p>${games[i].description}</p>`
 
        // append the game to the games-container
         let gamesContainer = document.getElementById("games-container");
         gamesContainer.appendChild(newGameCard)
     }      
-
 }
-
 // call the function we just defined using the correct variable
 addGamesToPage(GAMES_JSON)
 // later, we'll call this function using a different list of games
@@ -67,21 +64,33 @@ addGamesToPage(GAMES_JSON)
 const contributionsCard = document.getElementById("num-contributions");
 
 // use reduce() to count the number of total contributions by summing the backers
-
+const totalContributions = GAMES_JSON.reduce( (acc, currVal) => {
+    return acc + currVal.backers; //currVal.backers to access "backers" from JSON file
+    // dont need acc.backers bc acc is total val
+}, 0); 
+console.log(totalContributions)
 
 // set the inner HTML using a template literal and toLocaleString to get a number with commas
+contributionsCard.innerHTML = `<p>${totalContributions.toLocaleString("en-US")}</p>`
 
-
-// grab the amount raised card, then use reduce() to find the total amount raised
+// grab the amount raised card
 const raisedCard = document.getElementById("total-raised");
-
+// use reduce() to find the total amount raised
+const totalRaised = GAMES_JSON.reduce( (acc, currVal) => {
+    return acc + currVal.pledged;
+}, 0);
+console.log(totalRaised)
 // set inner HTML using template literal
-
+raisedCard.innerHTML = `<p>$${totalRaised.toLocaleString("en-US")}</p>`
 
 // grab number of games card and set its inner HTML
 const gamesCard = document.getElementById("num-games");
+// use reduce() to find the total amt of games
+const totalGames = GAMES_JSON.length;
+console.log(totalGames);
 
-
+// use innerHTML to set totalGames
+gamesCard.innerHTML = `<p>${totalGames}</p>`
 /*************************************************************************************
  * Challenge 5: Add functions to filter the funded and unfunded games
  * total number of contributions, amount donated, and number of games on the site.
