@@ -23,7 +23,7 @@ body {
     display: flex;
     align-items: stretch;
     background-image: url("assets/stats-chart.png");
-    background-size: 900px 250px;
+    background-size: 900px 300px;
 }
 
 .stats-container:hover {
