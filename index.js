@@ -173,7 +173,7 @@ const displayStr = `A total of $${totalRaised} has been raised for
 ${totalGames} games, yet ${unfundedStr} ${gamesStr} unfunded. Please help us fund these games!`;
 
 // create a new DOM element containing the template string and append it to the description container
-descriptionContainer.innerHTML = displayStr;
+descriptionContainer.append(displayStr);
 /************************************************************************************
  * Challenge 7: Select & display the top 2 games
  * Skills used: spread operator, destructuring, template literals, sort 
@@ -187,7 +187,13 @@ const sortedGames =  GAMES_JSON.sort( (item1, item2) => {
 });
 
 // use destructuring and the spread operator to grab the first and second games
+console.log(sortedGames);
+const [topGame, secondGame, ...rest] = sortedGames;
 
 // create a new element to hold the name of the top pledge game, then append it to the correct element
+const topFundedGameName = topGame.name;
+firstGameContainer.append(topFundedGameName);
 
+const secondFundedGameName = secondGame.name;
+secondGameContainer.append(secondFundedGameName);
 // do the same for the runner up item
