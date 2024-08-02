@@ -1,8 +1,8 @@
 # WEB102 Prework - *Sea Monster Crowdfunding*
 
-Submitted by: **Kayla Thornton*
+Submitted by: **Kayla Thornton**
 
-**Name of your app** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
+**Games Galore** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
 Time spent: **28** hours spent in total
 
@@ -23,10 +23,10 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://www.dropbox.com/scl/fi/89scgfwj0p32vidpgxenp/Kayla_Thornton_Web102_Walkthrough.mp4?rlkey=frt7ku3cf3gy17tstv6xwzi08&st=w9atpbqw&dl=0' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with ... Zoom 
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
