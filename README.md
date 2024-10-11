@@ -1,8 +1,8 @@
-# WEB102 Prework - *Sea Monster Crowdfunding*
+# WEB102 Prework - *Video Game Hub*
 
 Submitted by: **Kayla Thornton**
 
-**Games Galore** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
+This website displays information about Sea Monster Crowdfunding, a ficticious company that funds video games. The site displays the stats for the company including total amount of individual contributions, total amount raised for all games, how many games the company funds, and the top two most funded games. All games are then displayed at the bottom of the screen and can be filtered by 'All games', 'All funded games', and 'All unfunded games'. 
 
 Time spent: **28** hours spent in total
 
@@ -17,13 +17,13 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-* Changed the appearance of the Stats section to display a background image of a bar graph 
+* [x] Changed the appearance of the Stats section to display a background image of a bar graph 
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
 
-<img src='https://www.dropbox.com/scl/fi/89scgfwj0p32vidpgxenp/Kayla_Thornton_Web102_Walkthrough.mp4?rlkey=frt7ku3cf3gy17tstv6xwzi08&st=w9atpbqw&dl=0' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<a href='https://www.dropbox.com/scl/fi/89scgfwj0p32vidpgxenp/Kayla_Thornton_Web102_Walkthrough.mp4?rlkey=frt7ku3cf3gy17tstv6xwzi08&st=w9atpbqw&dl=0'>Video Walkthrough</a>
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ... Zoom 
@@ -42,7 +42,7 @@ Some challenges I encountered while building the app were:
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2024] [Kayla Thornton]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
